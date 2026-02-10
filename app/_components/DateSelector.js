@@ -39,8 +39,14 @@ function DateSelector({ cabin, settings, bookedDates }) {
         className="pt-12 place-self-center"
         mode="range"
         selected={displayRange}
-        onSelect={(range) => setRange(range)}
-        min={minBookingLength + 1}
+        onSelect={(range) => {
+          if (!range) {
+            resetRange();
+            return;
+          }
+          setRange(range);
+        }}
+        min={minBookingLength}
         max={maxBookingLength}
         fromMonth={new Date()}
         fromDate={new Date()}
