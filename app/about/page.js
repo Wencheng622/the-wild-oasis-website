@@ -47,13 +47,19 @@ export default async function Page() {
         <Image
           src={about1}
           fill
+          placeholder="blur"
           className="object-cover"
           alt="Family sitting around a fire pit in front of cabin"
         />
       </div>
 
       <div className="col-span-2">
-        <Image src={about2} alt="Family that manages The Wild Oasis" />
+        <Image
+          src={about2}
+          alt="Family that manages The Wild Oasis"
+          placeholder="blur"
+          fill
+        />
       </div>
 
       <div className="col-span-3">
