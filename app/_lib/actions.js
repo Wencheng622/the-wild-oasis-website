@@ -5,8 +5,8 @@ import { revalidatePath } from "next/cache";
 import { getBookings } from "@/app/_lib/data-service";
 import { redirect } from "next/navigation";
 
-export async function signInAction() {
-  await signIn("google", { redirectTo: "/account" });
+export async function signInAction(platform) {
+  await signIn(platform, { redirectTo: "/account" });
 }
 export async function signOutAction() {
   await signOut({ redirectTo: "/" });

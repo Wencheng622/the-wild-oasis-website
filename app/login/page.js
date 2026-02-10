@@ -8,7 +8,20 @@ export default function Page() {
       <h2 className="text-3xl font-semibold">
         Sign in to access your guest area
       </h2>
-      <SignInButton />
+      <SignInButton
+        src="https://authjs.dev/img/providers/google.svg"
+        alt="Google logo"
+        platform="google"
+      >
+        <span>Continue with Google</span>
+      </SignInButton>
+      <SignInButton
+        src="https://authjs.dev/img/providers/github.svg"
+        alt="Github logo"
+        platform="github"
+      >
+        <span>Continue with Github</span>
+      </SignInButton>
     </div>
   );
 }
