@@ -53,12 +53,11 @@ export default async function Page() {
         />
       </div>
 
-      <div className="col-span-2 relative aspect-square">
+      <div className="col-span-2  aspect-square">
         <Image
           src={about2}
           alt="Family that manages The Wild Oasis"
           placeholder="blur"
-          fill
         />
       </div>
 
